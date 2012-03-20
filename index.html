@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Raphaël Sample - Map of Japan</title>
+
+<link rel="stylesheet" href="styles/style.css">
+
+<script src="scripts/data/jpMapPath.hokkaido.js"></script>
+<script src="scripts/data/jpMapPath.aomori.js"></script>
+<script src="scripts/data/jpMapPath.iwate.js"></script>
+<script src="scripts/data/jpMapPath.miyagi.js"></script>
+<script src="scripts/data/jpMapPath.akita.js"></script>
+<script src="scripts/data/jpMapPath.yamagata.js"></script>
+<script src="scripts/data/jpMapPath.fukushima.js"></script>
+<script src="scripts/data/jpMapPath.ibaraki.js"></script>
+<script src="scripts/data/jpMapPath.tochigi.js"></script>
+<script src="scripts/data/jpMapPath.gunma.js"></script>
+<script src="scripts/data/jpMapPath.saitama.js"></script>
+<script src="scripts/data/jpMapPath.chiba.js"></script>
+<script src="scripts/data/jpMapPath.tokyo.js"></script>
+<script src="scripts/data/jpMapPath.kanagawa.js"></script>
+<script src="scripts/data/jpMapPath.niigata.js"></script>
+<script src="scripts/data/jpMapPath.toyama.js"></script>
+<script src="scripts/data/jpMapPath.ishikawa.js"></script>
+<script src="scripts/data/jpMapPath.fukui.js"></script>
+<script src="scripts/data/jpMapPath.yamanashi.js"></script>
+<script src="scripts/data/jpMapPath.nagano.js"></script>
+<script src="scripts/data/jpMapPath.gifu.js"></script>
+<script src="scripts/data/jpMapPath.shizuoka.js"></script>
+<script src="scripts/data/jpMapPath.aichi.js"></script>
+<script src="scripts/data/jpMapPath.mie.js"></script>
+<script src="scripts/data/jpMapPath.shiga.js"></script>
+<script src="scripts/data/jpMapPath.kyoto.js"></script>
+<script src="scripts/data/jpMapPath.osaka.js"></script>
+<script src="scripts/data/jpMapPath.hyogo.js"></script>
+<script src="scripts/data/jpMapPath.nara.js"></script>
+<script src="scripts/data/jpMapPath.wakayama.js"></script>
+<script src="scripts/data/jpMapPath.tottori.js"></script>
+<script src="scripts/data/jpMapPath.shimane.js"></script>
+<script src="scripts/data/jpMapPath.okayama.js"></script>
+<script src="scripts/data/jpMapPath.hiroshima.js"></script>
+<script src="scripts/data/jpMapPath.yamaguchi.js"></script>
+<script src="scripts/data/jpMapPath.tokushima.js"></script>
+<script src="scripts/data/jpMapPath.kagawa.js"></script>
+<script src="scripts/data/jpMapPath.ehime.js"></script>
+<script src="scripts/data/jpMapPath.kouchi.js"></script>
+<script src="scripts/data/jpMapPath.fukuoka.js"></script>
+<script src="scripts/data/jpMapPath.saga.js"></script>
+<script src="scripts/data/jpMapPath.nagasaki.js"></script>
+<script src="scripts/data/jpMapPath.kumamoto.js"></script>
+<script src="scripts/data/jpMapPath.oita.js"></script>
+<script src="scripts/data/jpMapPath.miyazaki.js"></script>
+<script src="scripts/data/jpMapPath.kagoshima.js"></script>
+<script src="scripts/data/jpMapPath.okinawa.js"></script>
+
+<script src="scripts/libs/raphael-min.js"></script>
+<script src="scripts/main.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+<header class="g-header">
+<h1>Raphaël Sample - Map of Japan</h1>
+</header>
+
+<div role="page">
+
+	<p>これは Raphaël という、 Web 上でベクターグラフィックスを扱うための JavaScript ライブラリを用いて地図を出力した個人的な作例です。<br>
+	マウスが各都道府県に乗った際、クリックした際それぞれのイベントと、そのイベントによって起こるアニメーションの記述も行っています。</p>
+
+	<p>地図の SVG データ、都道府県名のフォントには以下の素材を使用しています。</p>
+
+	<dl>
+		<dt>日本の白地図</dt>
+		<dd><a href="http://www.kabipan.com/geography/whitemap/index.html">http://www.kabipan.com/geography/whitemap/index.html</a></dd>
+		<dt>はんなり明朝</dt>
+		<dd><a href="http://typingart.net/index.html">http://typingart.net/index.html</a></dd>
+	</dl>
+
+
+<div class="mod-map">
+	<div id="raphael-map"></div>
+</div>
+
+</div>
+
+<footer class="g-footer">
+<p>© <a href="http://funenplacanen.com/" title="funenPlaCanen">@ykhs</a>. Some Rights Reserved.</p>
+</footer>
+</div>
+
+</body>
+</html>
