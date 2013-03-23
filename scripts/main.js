@@ -88,6 +88,7 @@ window.addEventListener('load', function() {
 
 
 		function enter(element) {
+                    console.log(element.id);
 			element.animate({
 				fill: fillHover,
 				stroke: strokeHover
@@ -95,6 +96,7 @@ window.addEventListener('load', function() {
 		}
 
 		function leave(element) {
+                        console.log(element.id);
 			element.animate({
 				fill: fill,
 				stroke: stroke
@@ -102,6 +104,7 @@ window.addEventListener('load', function() {
 		}
 
 		function deactive(element) {
+                        console.log(element.id);
 
 			element.data('name').hide();
 			element.animate({
@@ -118,7 +121,8 @@ window.addEventListener('load', function() {
 		}
 
 		function active(element) {
-
+                        console.log('active');
+                        console.log(element.id);
 			overlay.toFront();
 
 			prefectures.animate({
